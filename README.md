@@ -1,7 +1,7 @@
 # dplearn
 
-This is a python package for data analysis created by Sen LEI. 
+This is a python package for data analysis created by [Sen LEI](https://listen180.github.io/LEI-Sen/). 
 
-You can go to [Github](https://github.com/Dual-Points/dplearn/) to see the source code. 
+Source code are maintained on [Github](https://github.com/Dual-Points/dplearn/). 
 
 Welcome to adding more useful stuff. 
