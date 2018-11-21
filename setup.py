@@ -5,25 +5,28 @@
 # * Author        : LEI Sen
 # * Email         : sen.lei@outlook.com
 # * Create time   : 2018-11-21 15:48
-# * Last modified : 2018-11-21 15:48
+# * Last modified : 2018-11-21 21:41
 # * Filename      : setup.py
 # * Description   : 
 # *********************************************************
 
 import setuptools
+import sys
+
+version_number = input("Input the new version number you are going to use: ")
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="dplearn",
-    version="1.0.2",
+    version=version_number,
     author="Sen LEI",
     author_email="sen.lei@outlook.com",
     description="An useful package for data analysis. ",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/...",
+    url="https://github.com/Dual-Points/dplearn",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
