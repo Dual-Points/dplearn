@@ -1,4 +1,4 @@
 build/
 dist/
 dplearn.egg-info/
-setup.sh
+setup_new_pypi.sh
