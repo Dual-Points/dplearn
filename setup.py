@@ -28,9 +28,13 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Dual-Points/dplearn",
     packages=setuptools.find_packages(),
+    license="BSD 3-clause",
     classifiers=[
+        "Development Status :: 3 - Alpha",
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        #"License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
+    keywords='deep-learning data-mining data-tools statistical-modeling',
 )
