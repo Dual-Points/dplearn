@@ -4,4 +4,4 @@ This is a python package for data analysis created by [Sen LEI](https://listen18
 
 Source code are maintained on [Github](https://github.com/Dual-Points/dplearn/). 
 
-Welcome to adding more useful stuff. 
+Welcome to add more useful stuff. 
