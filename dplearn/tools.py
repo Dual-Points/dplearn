@@ -24,5 +24,5 @@ def continue_check (prompt):
             else:
                 return check_value
         except ValueError:
-            check_vlaue = input(prompt)
+            check_value = input(prompt)
             continue
