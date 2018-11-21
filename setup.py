@@ -17,7 +17,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dplearn",
-    version="1.0",
+    version="1.0.2",
     author="Sen LEI",
     author_email="sen.lei@outlook.com",
     description="An useful package for data analysis. ",
