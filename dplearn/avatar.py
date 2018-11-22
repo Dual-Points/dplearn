@@ -1,3 +1,18 @@
+#!/home/leisen/anaconda3/bin/python3
+# -*- coding: UTF-8 -*-
+
+# ********************************************************
+# * Author        : LEI Sen
+# * Email         : sen.lei@outlook.com
+# * Create time   : 2018-10-26 16:47
+# * Last modified : 2018-10-26 16:47
+# * Filename      : avatar.py
+# * Description   : 
+# *********************************************************
+
+
+
+
 import time
 import platform
 
@@ -30,7 +45,7 @@ class avatar(object):
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
 /_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
                                                                       
-                  Mac version 1.0.0 
+                  M version 1.0.0 
                   copyright 2018 Sen LEI
                 '''
         print(info)
@@ -44,7 +59,7 @@ class avatar(object):
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
 /_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
                                                                       
-                  Linux version 1.0.0 
+                  L version 1.0.0 
                   copyright 2018 Sen LEI
                 '''
         print(info)
@@ -58,11 +73,9 @@ class avatar(object):
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
 /_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
                                                                       
-                  Windows version 1.0.0 
+                  W version 1.0.0 
                   copyright 2018 Sen LEI
                 '''
         print(info)
         time.sleep(2)
 
-
-avatar()
