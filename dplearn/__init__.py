@@ -30,8 +30,9 @@ class avatar(object):
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
 /_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
                                                                       
-                  Mac version 1.0.0 
-                  copyright 2018 Sen LEI
+                  Mac version 
+                  Copyright 2018 Sen LEI
+                  All Rights Reserved
                 '''
         print(info)
         time.sleep(2)
@@ -44,8 +45,9 @@ class avatar(object):
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
 /_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
                                                                       
-                  Linux version 1.0.0 
-                  copyright 2018 Sen LEI
+                  Linux version
+                  Copyright 2018 Sen LEI
+                  All Rights Reserved
                 '''
         print(info)
         time.sleep(2)
@@ -58,8 +60,9 @@ class avatar(object):
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
 /_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
                                                                       
-                  Windows version 1.0.0 
-                  copyright 2018 Sen LEI
+                  Windows version
+                  Copyright 2018 Sen LEI
+                  All Rights Reserved
                 '''
         print(info)
         time.sleep(2)

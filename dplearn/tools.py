@@ -12,6 +12,8 @@
 
 
 import time
+import pandas as pd
+import re
 
 
 def tick_start (contex):
