@@ -1,3 +1,14 @@
+#!/Users/leisen/anaconda3/bin/python3
+# -*- coding: UTF-8 -*-
+
+# ********************************************************
+# * Author        : LEI Sen
+# * Email         : sen.lei@outlook.com
+# * Create time   : 2018-11-26 14:01
+# * Last modified : 2018-11-26 14:01
+# * Filename      : __init__.py
+# * Description   : 
+# *********************************************************
 import time
 import platform
 
@@ -23,48 +34,75 @@ class avatar(object):
             self.n = 2
 
     def type_1(self):
-        info = '''
+        info_org = '''
     ____              __   ____        _       __      
    / __ \__  ______ _/ /  / __ \____  (_)___  / /______
   / / / / / / / __ `/ /  / /_/ / __ \/ / __ \/ __/ ___/
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
-/_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
-                                                                      
-                  Mac version 
+/_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/    Mac version
+
+                       Copyright 2018 Sen LEI 
+                       All Rights Reserved
+                '''
+        info = '''
+               __      __                    
+          ____/ /___  / /__  ____ __________ 
+         / __  / __ \/ / _ \/ __ `/ ___/ __ \
+        / /_/ / /_/ / /  __/ /_/ / /  / / / /
+        \__,_/ .___/_/\___/\__,_/_/  /_/ /_/ 
+            /_/                              Mac version
                   Copyright 2018 Sen LEI
                   All Rights Reserved
                 '''
-        print(info)
+        print(info_org)
         time.sleep(2)
 
     def type_2(self):
-        info = '''
+        info_org = '''
     ____              __   ____        _       __      
    / __ \__  ______ _/ /  / __ \____  (_)___  / /______
   / / / / / / / __ `/ /  / /_/ / __ \/ / __ \/ __/ ___/
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
-/_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
-                                                                      
-                  Linux version
+/_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/    Linux version
+
+                       Copyright 2018 Sen LEI 
+                       All Rights Reserved
+                '''
+        info = ''' 
+               __      __                    
+          ____/ /___  / /__  ____ __________ 
+         / __  / __ \/ / _ \/ __ `/ ___/ __ \
+        / /_/ / /_/ / /  __/ /_/ / /  / / / /
+        \__,_/ .___/_/\___/\__,_/_/  /_/ /_/ 
+            /_/                              Linux version
                   Copyright 2018 Sen LEI
                   All Rights Reserved
                 '''
-        print(info)
+        print(info_org)
         time.sleep(2)
 
     def type_3(self):
-        info = '''
+        info_org = '''
     ____              __   ____        _       __      
    / __ \__  ______ _/ /  / __ \____  (_)___  / /______
   / / / / / / / __ `/ /  / /_/ / __ \/ / __ \/ __/ ___/
  / /_/ / /_/ / /_/ / /  / ____/ /_/ / / / / / /_(__  ) 
-/_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/  
-                                                                      
-                  Windows version
+/_____/\__,_/\__,_/_/  /_/    \____/_/_/ /_/\__/____/    Linux version
+
+                       Copyright 2018 Sen LEI 
+                       All Rights Reserved
+                '''
+        info = '''
+               __      __                    
+          ____/ /___  / /__  ____ __________ 
+         / __  / __ \/ / _ \/ __ `/ ___/ __ \
+        / /_/ / /_/ / /  __/ /_/ / /  / / / /
+        \__,_/ .___/_/\___/\__,_/_/  /_/ /_/ 
+            /_/                              Windows version
                   Copyright 2018 Sen LEI
                   All Rights Reserved
                 '''
-        print(info)
+        print(info_org)
         time.sleep(2)
 
 
