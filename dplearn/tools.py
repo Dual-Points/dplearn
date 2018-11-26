@@ -54,7 +54,7 @@ def continue_check (prompt):
 
 
 
-def clean (data_org, col_name, replace=False):
+def clean (data_org, col_name, replace=False, print_each=True):
     """
     Function for removing all special chatacters. 
     
@@ -119,10 +119,15 @@ def clean (data_org, col_name, replace=False):
         if result:
             sub_string = pattern.sub('', string)
             data.loc[i, col_name_new] = sub_string
-            print(f"""          {data.loc[i, col_name]} --> {sub_string}""")
-            print(f"""Progress: {i}/{total_len}""", end='\r')
+            if print_each==True:
+            	print(f'          {data.loc[i, col_name]} --> {sub_string}')
+            elif print_each==False:
+            	pass
+            else:
+            	raise ValueError("Please input either 'True' or 'False' for print_each arguement. ")
+            print(f'Progress: {i}/{total_len}', end='\r')
             result_list.append(result)
-    print(f"""Progress: {i}/{total_len}""")
+    print(f'Progress: {i}/{total_len}')
     tick_end()
     
     return data
