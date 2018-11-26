@@ -2,3 +2,4 @@ build/
 dist/
 dplearn.egg-info/
 setup_new_pypi.sh
+__pycache__/
