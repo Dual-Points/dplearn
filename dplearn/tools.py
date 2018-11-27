@@ -135,5 +135,27 @@ def clean (data_org, col_name, replace=False, print_each=True):
 
 
 
+def cord_distance(Lng_A, Lat_A, Lng_B, Lat_B):
+    """
+    Function for calculating distance by using cordinates
+    """
+    if (Lng_A == Lng_B and Lat_A == Lat_B):
+        distance = 0
+    else:
+        ra = 6378.140  
+        rb = 6356.755  
+        flatten = (ra - rb) / ra 
+        rad_lat_A = radians(Lat_A)
+        rad_lng_A = radians(Lng_A)
+        rad_lat_B = radians(Lat_B)
+        rad_lng_B = radians(Lng_B)
+        pA = atan(rb / ra * tan(rad_lat_A))
+        pB = atan(rb / ra * tan(rad_lat_B))
+        xx = acos(sin(pA) * sin(pB) + cos(pA) * cos(pB) * cos(rad_lng_A - rad_lng_B))
+        c1 = (sin(xx) - xx) * (sin(pA) + sin(pB)) ** 2 / cos(xx / 2) ** 2
+        c2 = (sin(xx) + xx) * (sin(pA) - sin(pB)) ** 2 / sin(xx / 2) ** 2
+        dr = flatten / 8 * (c1 - c2)
+        distance = ra * (xx + dr)
+    return distance
 
 
