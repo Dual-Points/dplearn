@@ -8,7 +8,7 @@ DP Learn toolkit in Python
 Why Should I Use This?
 ************************************************************
 
-This is a test README.rst. 
+This is a Python package for data analysis which contains some very useful functions. 
 
 
 Installation
@@ -28,7 +28,7 @@ Add sudo in the beginning if you met problem.
 
 
 
-Features
+Modules
 ************************************************************
 
 - tools
@@ -39,39 +39,14 @@ Features
 Usage
 ************************************************************
 
-In your command-line:
-
-.. code-block:: bash
-
-   $ 
-
-   Translation: 这是一支笔
-
-Or
-
-.. code-block:: bash
-
-   $ 
-
-
 
 Use As A Python Module
-************************************************************
+------------------------------------------------------------
 
 .. code-block:: python
    
-   from dplearn import clean
+   from dplearn.tools import clean
    data = clean(data)
-
-
-
-Use a different translation provider
-************************************************************
-
-.. code-block:: python
-
-   from dplearn import clean
-   data= clean(data)
    print(data)
 
 
