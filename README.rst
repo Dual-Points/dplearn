@@ -102,8 +102,10 @@ Please send pull requests, very much appriciated.
 
 .. |PyPI Platform| image:: https://img.shields.io/pypi/pyversions/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
+
 .. |PyPI License| image:: https://img.shields.io/pypi/l/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
+
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
 
