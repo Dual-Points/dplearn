@@ -5,15 +5,16 @@
 # * Author        : LEI Sen
 # * Email         : sen.lei@outlook.com
 # * Create time   : 2018-11-21 15:48
-# * Last modified : 2018-11-28 22:09
+# * Last modified : 2018-11-29 00:09
 # * Filename      : setup.py
 # * Description   : 
 # *********************************************************
 
-import setuptools
+#import setuptools
 import sys
 import codecs
 
+from distutils.core import setup
 
 version_number = input("Input the new version number you are going to use: ")
 
@@ -27,7 +28,8 @@ with codecs.open('README.rst' ,'r') as f:
 #     long_description = fh.read()
 
 
-setuptools.setup(
+#setuptools.setup(
+setup(
     name="dplearn",
     version=version_number,
     author="Sen LEI",
