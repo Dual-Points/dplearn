@@ -44,7 +44,7 @@ print(data)
 Documentation
 ************************************************************
 
-Check out the latest ``dplearn`` documentation at `Read the Docs <http://dplearn.readthedocs.io/en/latest/>`_
+Check out the latest ``dplearn`` documentation at http://dplearn.readthedocs.io/en/latest/
 
 
 
@@ -54,7 +54,7 @@ Contributing
 Please send pull requests, very much appriciated. 
 
 
-1. Fork the `repository <https://github.com/Dual-Points/dplearn>`_ on GitHub.
+1. Fork the repository https://github.com/Dual-Points/dplearn on GitHub.
 2. Make a branch off of master and commit your changes to it.
 3. Create a Pull Request with your contribution
 
