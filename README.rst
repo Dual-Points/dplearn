@@ -1,4 +1,4 @@
-DP Learn toolkit in Python
+DP Learn Toolkit in Python
 ############################################################
 
 |PyPI Version| |PyPI Platform| |PyPI License|
@@ -15,14 +15,16 @@ Installation
 ************************************************************
 
 .. code-block:: bash
+ 
+ $ pip install dplearn
 
-   $ pip install dplearn
 
 Or, you can download the source and
 
 .. code-block:: bash
 
-   $ python setup.py install
+ $ python setup.py install
+
 
 Add sudo in the beginning if you met problem.
 
@@ -45,9 +47,9 @@ Use As A Python Module
 
 .. code-block:: python
    
-   from dplearn.tools import clean
-   data = clean(data)
-   print(data)
+ from dplearn.tools import clean
+ data = clean(data)
+ print(data)
 
 
 
