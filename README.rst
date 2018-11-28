@@ -1,20 +1,20 @@
-==========================
+############################################################
 DP Learn toolkit in Python
-==========================
+############################################################
 
 |PyPI Version| |PyPI Platform| |PyPI License|
 
 
 
-
+************************************************************
 Why Should I Use This?
-----------------------
+************************************************************
 
 This
 
-
+************************************************************
 Installation
-------------
+************************************************************
 
 .. code-block:: bash
 
@@ -29,15 +29,17 @@ Or, you can download the source and
 Add sudo in the beginning if you met problem.
 
 
+************************************************************
 Features
---------
+************************************************************
 
 - tools
 - math
 
 
+************************************************************
 Usage
------
+************************************************************
 
 In your command-line:
 
@@ -46,7 +48,6 @@ In your command-line:
    $ 
 
    Translation: 这是一支笔
-   -------------------------
 
 Or
 
@@ -56,40 +57,39 @@ Or
 
 
 
+************************************************************
 Use As A Python Module
-----------------------
+************************************************************
 
 .. code-block:: python
-
-   In [1]: from dplearn import clean
-   In [2]: data= clean(data)
-   In [3]: print(data)
-   Out [3]: ...
-
-Explaination. 
+   
+   from dplearn import clean
+   data = clean(data)
 
 
+
+************************************************************
 Use a different translation provider
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+************************************************************
 
 .. code-block:: python
 
-    In [1]: from dplearn import clean
-    In [2]: data= clean(data)
-    In [3]: print(data)
-    Out [3]: ...
-
-Explaination. 
+   from dplearn import clean
+   data= clean(data)
+   print(data)
 
 
+
+************************************************************
 Documentation
--------------
+************************************************************
 
 Check out the latest ``dplearn`` documentation at `Read the Docs <http://dplearn.readthedocs.io/en/latest/>`_
 
 
+************************************************************
 Contributing
-------------
+************************************************************
 
 Please send pull requests, very much appriciated. 
 
