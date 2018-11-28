@@ -9,4 +9,4 @@ Quickstart
 .. toctree::
     :maxdepth: 1
 
-    ../README.rst
+    README.rst
