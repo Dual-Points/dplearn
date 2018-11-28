@@ -3,6 +3,9 @@ DP Learn Toolkit in Python
 
 |PyPI Version| |PyPI Platform| |PyPI License|
 
+.. image:: https://img.shields.io/pypi/v/dplearn.svg
+   :target: https://pypi.python.org/pypi/dplearn
+   :alt: PyPI Version
 
 
 Why Should I Use This?
