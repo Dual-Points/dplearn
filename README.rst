@@ -17,19 +17,7 @@ This is a Python package for data analysis which contains some very useful funct
 Installation
 ************************************************************
 
-.. code-block:: bash
- 
- $ pip install dplearn
-
-
-Or, you can download the source and
-
-.. code-block:: bash
-
- $ python setup.py install
-
-
-Add sudo in the beginning if you met problem.
+$ pip install dplearn
 
 
 
@@ -44,15 +32,9 @@ Modules
 Usage
 ************************************************************
 
-
-Use As A Python Module
-------------------------------------------------------------
-
-.. code-block:: python
-   
- from dplearn.tools import clean
- data = clean(data)
- print(data)
+from dplearn.tools import clean
+data = clean(data)
+print(data)
 
 
 
