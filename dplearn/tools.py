@@ -120,17 +120,59 @@ def clean (data_org, col_name, replace=False, print_each=True):
             sub_string = pattern.sub('', string)
             data.loc[i, col_name_new] = sub_string
             if print_each==True:
-            	print(f'          {data.loc[i, col_name]} --> {sub_string}')
+            	print(f'          {data_org.loc[i, col_name]} --> {sub_string}')
             elif print_each==False:
             	pass
             else:
             	raise ValueError("Please input either 'True' or 'False' for print_each arguement. ")
-            print(f'Progress: {i}/{total_len}', end='\r')
+            print(f'Progress: {i+1}/{total_len}', end='\r')
             result_list.append(result)
-    print(f'Progress: {i}/{total_len}')
+    print(f'Progress: {i+1}/{total_len}')
     tick_end()
     
     return data
+
+
+
+
+
+## Change from a text to another text
+def clean_to (data_org, col_name, org_regexpress, target_text, replace=False, print_each=True):
+    """
+    """
+    if isinstance(data_org, pd.DataFrame):
+        pass
+    else:
+        raise ValueError("Please use pandas dataframe as input. ")
+    data = data_org.copy()
+    total_len = len(data[col_name])
+
+    tick_start(f'Changing {org_regexpress} to {target_text}')
+    
+    result_list = []
+    pattern = re.compile(org_regexpress)
+    for i,string in enumerate(data[col_name]):
+        result = pattern.search(string)
+        if result:
+            sub_string = pattern.sub(target_text, string)
+            data.loc[i, col_name] = sub_string
+            print(f"""          {data_org.loc[i, col_name]} --> {sub_string}""")
+            print(f"""Progress: {i+1}/{total_len}""", end='\r')
+            result_list.append(result)
+    print(f"""Progress: {i+1}/{total_len}""")
+    result_list = list(set(result_list))
+
+    tick_end()
+
+    return data
+
+
+
+
+
+
+
+
 
 
 
