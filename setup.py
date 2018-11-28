@@ -10,7 +10,7 @@
 # * Description   : 
 # *********************************************************
 
-#import setuptools
+import setuptools
 import sys
 import codecs
 
