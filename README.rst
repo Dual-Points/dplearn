@@ -1,11 +1,9 @@
 DP Learn Toolkit in Python
 ############################################################
 
-|PyPI Version| |PyPI Platform| |PyPI License|
+|PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
-.. image:: https://img.shields.io/pypi/v/dplearn.svg
-   :target: https://pypi.python.org/pypi/dplearn
-   :alt: PyPI Version
+
 
 
 Why Should I Use This?
@@ -87,3 +85,5 @@ Please send pull requests, very much appriciated.
 .. |PyPI download| image:: https://img.shields.io/pypi/dm/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
 
+.. |PyPI Doc| image:: https://readthedocs.org/projects/dp-learn/badge/
+   :target: https://dp-learn.readthedocs.io/en/latest/
