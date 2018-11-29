@@ -4,7 +4,7 @@ DP Learn Toolkit in Python
 |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
 
-Author's Link: |Sen LEI Github| |Sen LEI Website|
+|Sen LEI Github| |Sen LEI Website|
 
 
 
@@ -99,10 +99,10 @@ Please send pull requests, very much appriciated.
 
 
 
-.. |Sen LEI Github| image:: https://img.shields.io/badge/Github-Sen%20LEI-orange.svg?logo=github&longCache=true&style=plastic&logoColor=white
+.. |Sen LEI Github| image:: https://img.shields.io/badge/Github-Sen%20LEI-orange.svg?logo=github&longCache=true&style=flat&logoColor=white
    :target: https://github.com/Listen180
 
-.. |Sen LEI Website| image:: https://img.shields.io/badge/Website-Sen%20LEI-orange.svg?longCache=true&style=plastic&logoColor=white
+.. |Sen LEI Website| image:: https://img.shields.io/badge/Website-Sen%20LEI-orange.svg?longCache=true&style=flat&logoColor=white
    :target: https://listen180.github.io/LEI-Sen/
 
 
