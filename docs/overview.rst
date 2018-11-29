@@ -1,4 +1,4 @@
-Overview of DP Learn Toolkit
+Overview of dplearn
 ############################################################
 
 |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
@@ -11,7 +11,7 @@ Why Should I Use This?
 
 This is a Python package for data analysis which contains some very useful tools and functions. 
 
-The pac
+The package is contiually updated. 
 
 
 
