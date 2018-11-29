@@ -3,6 +3,7 @@ DP Learn Toolkit in Python
 
 |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
+|Sen LEI|
 
 
 
@@ -87,3 +88,5 @@ Please send pull requests, very much appriciated.
 
 .. |PyPI Doc| image:: https://readthedocs.org/projects/dp-learn/badge/
    :target: https://dp-learn.readthedocs.io/en/latest/
+
+.. |Sen LEI| image:: https://img.shields.io/badge/Sen%20LEI-My%20Website-green.svg?logo=github&longCache=true&style=for-the-badge&logoColor=white&link=https://github.com/Listen180&link=https://listen180.github.io/LEI-Sen/
