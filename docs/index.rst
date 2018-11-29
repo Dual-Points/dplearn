@@ -9,4 +9,24 @@ Quickstart
 .. toctree::
     :maxdepth: 1
 
-    README.rst
+    quickstart/installation.rst
+
+
+
+User Guide
+----------
+
+.. toctree:: 
+    :maxdepth: 2
+
+    overview.rst
+    tutorial.rst
+
+
+
+
+Downloads
+---------
+
+.. toctree:: 
+    :maxdepth: 1

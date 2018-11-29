@@ -57,7 +57,7 @@ Use As A Python Module
 Documentation
 ************************************************************
 
-Check out the latest ``dplearn`` documentation at `Read the Docs <http://dplearn.readthedocs.io/en/latest/>`_
+Check out the latest ``dplearn`` documentation at `Read the Docs <https://dp-learn.readthedocs.io/en/latest/>`_
 
 
 
