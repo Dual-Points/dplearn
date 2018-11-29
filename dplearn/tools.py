@@ -282,15 +282,17 @@ def concurrent_run (time_out_max=0.5, time_out_count_max=10, max_workers=1):
 
 ##### pgSQL connector #####
 def pg_conn(host_adress, port_adress, db_namem):
-	"""
-	pgSQL connector
-	"""
-	DB_loc = host_adress + ':' + port_adress + ':' + db_namem
-	
-	username = input(f"Please input your user name on ({DB_loc}): ")
-	passcode = gp.getpass("Please input your passcode: ")
-	
+    """
+    pgSQL connector
+    """
+    DB_loc = host_adress + ':' + port_adress + ':' + db_namem
+
+    username = input(f"Please input your user name on ({DB_loc}): ")
+    passcode = gp.getpass("Please input your passcode: ")
+
     address = 'postgresql://'+ username + ':' + passcode + '@' + host_adress + ':' + port_adress + '/' + db_name
+    
     conn = create_engine(address, echo=False).connect()
+
     return conn
 
