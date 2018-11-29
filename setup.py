@@ -36,7 +36,7 @@ setup(
     author_email="sen.lei@outlook.com",
     description="An useful package for data analysis. ",
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    #long_description_content_type="text/markdown",
     url="https://github.com/Dual-Points/dplearn",
     packages=setuptools.find_packages(),
     license="BSD 3-clause",
