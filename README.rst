@@ -100,7 +100,7 @@ Please send pull requests, very much appriciated.
 .. |PyPI download| image:: https://img.shields.io/pypi/dm/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
 
-.. |PyPI Doc| image:: https://readthedocs.org/projects/dp-learn/badge/?logo=readthedocs&logoColor=white
+.. |PyPI Doc| image:: https://readthedocs.org/projects/dp-learn/badge
    :target: https://dp-learn.readthedocs.io/en/latest/
 
 
