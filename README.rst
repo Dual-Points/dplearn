@@ -104,7 +104,7 @@ Please send pull requests, very much appriciated.
 .. |Sen LEI Github| image:: https://img.shields.io/badge/Github-Sen%20LEI-orange.svg?logo=github&longCache=true&style=flat&logoColor=white
    :target: https://github.com/Listen180
 
-.. |Sen LEI Website| image:: https://img.shields.io/badge/Author-Sen%20LEI-orange.svg?longCache=true&style=flat&logoColor=white
+.. |Sen LEI Website| image:: https://img.shields.io/badge/Author-Sen%20LEI-orange.svg?logo=data:imgs/DP_favicon.png&longCache=true&style=flat&logoColor=white
    :target: https://listen180.github.io/LEI-Sen/
 
 
