@@ -17,19 +17,10 @@ User Guide
 ----------
 
 .. toctree:: 
-    :maxdepth: 1
+    :maxdepth: 2
 
     overview.rst
-    tutorial/tools.rst
-
-
-
-
-Tutorial
---------
-
-.. toctree:: 
-    :maxdepth: 1
+    tutorial.rst
 
 
 
