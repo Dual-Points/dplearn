@@ -5,7 +5,6 @@ DP Learn Toolkit in Python
 
 |Sen LEI Github| |Sen LEI Website|
 
-.. image:: https://img.shields.io/badge/Sen%20LEI-My%20Website-green.svg?longCache=true&style=social&link=https://github.com/Listen180&link=https://listen180.github.io/LEI-Sen/
 
 
 Why Should I Use This?
@@ -81,7 +80,7 @@ Please send pull requests, very much appriciated.
 .. |PyPI License| image:: https://img.shields.io/pypi/l/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
 
-.. |PyPI Version| image:: https://img.shields.io/pypi/v/dplearn.svg
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/dplearn.svg?logo=python&logoColor=white
    :target: https://pypi.python.org/pypi/dplearn
 
 .. |PyPI download| image:: https://img.shields.io/pypi/dm/dplearn.svg
@@ -90,8 +89,8 @@ Please send pull requests, very much appriciated.
 .. |PyPI Doc| image:: https://readthedocs.org/projects/dp-learn/badge/
    :target: https://dp-learn.readthedocs.io/en/latest/
 
-.. |Sen LEI Github| image:: https://img.shields.io/badge/Github-Sen%20LEI-blue.svg?logo=github&longCache=true&style=plastic&logoColor=white
+.. |Sen LEI Github| image:: https://img.shields.io/badge/Github-Sen%20LEI-orange.svg?logo=github&longCache=true&style=plastic&logoColor=white
    :target: https://github.com/Listen180
 
-.. |Sen LEI Website| image:: https://img.shields.io/badge/My%20Webset-Sen%20LEI-blue.svg?longCache=true&style=plastic&logoColor=white
+.. |Sen LEI Website| image:: https://img.shields.io/badge/Website-Sen%20LEI-orange.svg?longCache=true&style=plastic&logoColor=white
    :target: https://listen180.github.io/LEI-Sen/
