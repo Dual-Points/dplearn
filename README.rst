@@ -1,8 +1,6 @@
 DP Learn Toolkit in Python
 ############################################################
 
-|Sen LEI Website| |Sen LEI Github|
-
 
 |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
@@ -77,6 +75,12 @@ Please send pull requests, very much appriciated.
 3. Create a Pull Request with your contribution. 
 
 
+
+
+
+
+
+|Sen LEI Website| |Sen LEI Github|
 
 
 
