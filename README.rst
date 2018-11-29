@@ -1,10 +1,12 @@
 DP Learn Toolkit in Python
 ############################################################
 
+|Sen LEI Website| |Sen LEI Github|
+
+
 |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
 
-|Sen LEI Github| |Sen LEI Website|
 
 
 
@@ -70,7 +72,7 @@ Contributing
 Please send pull requests, very much appriciated. 
 
 
-1. Fork the repository on Github: |org_repo|
+1. Fork |org_repo| on Github. 
 2. Make a branch off of master and commit your changes to it. 
 3. Create a Pull Request with your contribution. 
 
@@ -102,7 +104,7 @@ Please send pull requests, very much appriciated.
 .. |Sen LEI Github| image:: https://img.shields.io/badge/Github-Sen%20LEI-orange.svg?logo=github&longCache=true&style=flat&logoColor=white
    :target: https://github.com/Listen180
 
-.. |Sen LEI Website| image:: https://img.shields.io/badge/Website-Sen%20LEI-orange.svg?longCache=true&style=flat&logoColor=white
+.. |Sen LEI Website| image:: https://img.shields.io/badge/Author-Sen%20LEI-orange.svg?logo=about-dot-me&longCache=true&style=flat&logoColor=white
    :target: https://listen180.github.io/LEI-Sen/
 
 
