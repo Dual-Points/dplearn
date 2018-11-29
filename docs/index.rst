@@ -9,16 +9,18 @@ Quickstart
 .. toctree::
     :maxdepth: 1
 
-    intro.rst
+    quickstart/installation.rst
 
 
-Development
------------
+
+User Guide
+----------
 
 .. toctree:: 
     :maxdepth: 1
 
-    development/installation.rst
+    overview.rst
+    tutorial/tools.rst
 
 
 
@@ -29,4 +31,11 @@ Tutorial
 .. toctree:: 
     :maxdepth: 1
 
-    tools_docs/tutorial.rst
+
+
+
+Downloads
+---------
+
+.. toctree:: 
+    :maxdepth: 1
