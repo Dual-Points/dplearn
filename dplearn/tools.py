@@ -16,8 +16,11 @@ import pandas as pd
 import numpy as np
 import concurrent
 from concurrent.futures import ThreadPoolExecutor
+from sqlalchemy import create_engine
+import getpass as gp
 
 
+#####  #####
 def tick_start (context):
     """
     
@@ -29,6 +32,7 @@ def tick_start (context):
     print('\n')
     print(context, '...')
 
+#####  #####
 def tick_end (context=''):
     """
     
@@ -44,6 +48,7 @@ def tick_end (context=''):
 
 
 
+#####  #####
 def continue_check (prompt):
     """
     This function will help to check if the input is either 'n', 'N', 'y', or 'Y' 
@@ -77,6 +82,7 @@ def continue_check (prompt):
 
 
 
+#####  #####
 def clean (data_org, col_name, replace=False, print_each=True):
     """
     This function is to remove all special chatacters. 
@@ -162,7 +168,7 @@ def clean (data_org, col_name, replace=False, print_each=True):
 
 
 
-## Change from a text to another text
+##### Change from a text to another text #####
 def clean_to (data_org, col_name, org_regexpress, target_text, replace=True, print_each=True):
     """
     This function is to change some value satisfying specific reg-expression to a specific text. 
@@ -221,6 +227,7 @@ def clean_to (data_org, col_name, org_regexpress, target_text, replace=True, pri
 
 
 
+#####  #####
 def concurrent_run (time_out_max=0.5, time_out_count_max=10, max_workers=1):
     """
     INPUT: 
@@ -272,3 +279,19 @@ def concurrent_run (time_out_max=0.5, time_out_count_max=10, max_workers=1):
 
 
 
+
+##### pgSQL connector #####
+def pg_conn(host_adress, port_adress, db_name):
+    """
+    pgSQL connector
+    """
+    DB_loc = host_adress + ':' + port_adress + ':' + db_name
+
+    username = input(f"Please input your user name on ({DB_loc}): ")
+    passcode = gp.getpass("Please input your passcode: ")
+
+    address = 'postgresql://'+ username + ':' + passcode + '@' + host_adress + ':' + port_adress + '/' + db_name
+    
+    conn = create_engine(address, echo=False).connect()
+
+    return conn
