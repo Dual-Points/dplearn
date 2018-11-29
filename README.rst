@@ -85,7 +85,7 @@ Please send pull requests, very much appriciated.
    :target: https://pypi.python.org/pypi/dplearn
 
 .. |PyPI License| image:: https://img.shields.io/pypi/l/dplearn.svg
-   :target: https://pypi.python.org/pypi/dplearn
+   :target: https://opensource.org/licenses/BSD-3-Clause
 
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
@@ -106,5 +106,5 @@ Please send pull requests, very much appriciated.
 
 
 
-.. |org_repo| image:: https://img.shields.io/badge/-repository-green.svg?logo=github&longCache=true&style=plastic&logoColor=white
+.. |org_repo| image:: https://img.shields.io/badge/-repository-green.svg?logo=github&longCache=true&style=flat&logoColor=white
    :target: https://github.com/Dual-Points/dplearn
