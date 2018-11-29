@@ -3,7 +3,8 @@ DP Learn Toolkit in Python
 
 |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
-|Sen LEI Github| |Sen LEI Website|
+
+Author's Link: |Sen LEI Github| |Sen LEI Website|
 
 
 
