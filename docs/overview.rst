@@ -9,39 +9,28 @@ Overview of DP Learn Toolkit
 Why Should I Use This?
 ************************************************************
 
-This is a Python package for data analysis which contains some very useful functions. 
+This is a Python package for data analysis which contains some very useful tools and functions. 
 
-
-Installation
-************************************************************
-
-.. code-block:: bash
- 
- $ pip install dplearn
-
-
-Or, you can download the source and
-
-.. code-block:: bash
-
- $ python setup.py install
-
-
-Add sudo in the beginning if you met problem.
+The pac
 
 
 
 Modules
 ************************************************************
 
-- tools
-- math
+- ``tools``
+    Useful functions helping you to speed up your programming. 
+
+- ``math``
+    Functions that realated to math calculation. 
+
+- ``extra``
+    Some other functions that are very useful in specific situations. 
 
 
 
 Usage
 ************************************************************
-
 
 Use As A Python Module
 ------------------------------------------------------------
