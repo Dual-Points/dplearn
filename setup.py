@@ -24,9 +24,6 @@ with codecs.open('README.rst' ,'r') as f:
     #long_description = '\n{}'.format(f.read())
     long_description = f.read()
 
-# with open("README.md", "r") as fh:
-#     long_description = fh.read()
-
 
 #setuptools.setup(
 setup(
