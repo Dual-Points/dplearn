@@ -5,39 +5,62 @@
 # * Author        : LEI Sen
 # * Email         : sen.lei@outlook.com
 # * Create time   : 2018-11-21 16:26
-# * Last modified : 2018-11-21 16:26
+# * Last modified : 2018-11-28 16:42
 # * Filename      : tools.py
 # * Description   : 
 # *********************************************************
 
-
+import re
 import time
 import pandas as pd
-import re
+import numpy as np
+import concurrent
+from concurrent.futures import ThreadPoolExecutor
 
 
-def tick_start (contex):
+def tick_start (context):
     """
+    
+    INPUT: 
+        context: string that specifying the task. 
     """
     global t0
     t0 = time.time()
     print('\n')
-    print(contex, '...')
+    print(context, '...')
 
-def tick_end (contex=''):
+def tick_end (context=''):
     """
+    
+    INPUT: 
+        context: string; defult by eding with '... excution complete' and the time used. 
     """
     global t1
     global t_range
     t1 = time.time()
     t_range = round(t1 - t0, 4)
-    print('...', contex, 'excution complete. (Time consumed:', t_range,'s) \n')
+    print('...', context, 'excution complete. (Time consumed:', t_range,'s) \n')
 
 
 
 
 def continue_check (prompt):
     """
+    This function will help to check if the input is either 'n', 'N', 'y', or 'Y' 
+    to make sure computer get the right value to continue. 
+    
+    Otherwise the prompt will show up again untill you input a valid value or 
+    forced to quit the program. 
+    
+    
+    INPUT: 
+        prompt: [string] the text shown on the terminal explaining what task to be continued. 
+
+    OUTPUT: 
+        check_value: [string] either 'n', 'N', 'y' or 'Y'. 
+    
+    Example: 
+        check_value = continue_check('Do you want to continue this procedure? [Y/n]: ')
     """
     check_value = input(prompt)
     while True:
@@ -54,13 +77,16 @@ def continue_check (prompt):
 
 
 
-def clean (data_org, col_name, replace=False):
+def clean (data_org, col_name, replace=False, print_each=True):
     """
-    Function for removing all special chatacters. 
+    This function is to remove all special chatacters. 
+    
     
     INPUT: 
         data: pandas dataframe
-        col_name: 
+        col_name: [string] the column name of the variable you want to serch for
+        replace: [boolean]
+        print_each: [boolean]
         
     OUTPUT: 
         pandas dataframe, with an extra cleaned column
@@ -119,15 +145,129 @@ def clean (data_org, col_name, replace=False):
         if result:
             sub_string = pattern.sub('', string)
             data.loc[i, col_name_new] = sub_string
-            print(f"""          {data.loc[i, col_name]} --> {sub_string}""")
-            print(f"""Progress: {i}/{total_len}""", end='\r')
+            if print_each==True:
+            	print(f'          {data_org.loc[i, col_name]} --> {sub_string}')
+            elif print_each==False:
+            	pass
+            else:
+            	raise ValueError("Please input either 'True' or 'False' for print_each arguement. ")
+            print(f'Progress: {i+1}/{total_len}', end='\r')
             result_list.append(result)
-    print(f"""Progress: {i}/{total_len}""")
+    print(f'Progress: {i+1}/{total_len}')
     tick_end()
     
     return data
 
 
+
+
+
+## Change from a text to another text
+def clean_to (data_org, col_name, org_regexpress, target_text, replace=True, print_each=True):
+    """
+    This function is to change some value satisfying specific reg-expression to a specific text. 
+
+    
+    INPUT: 
+        data: pandas dataframe
+        col_name: [string] the column name of the variable you want to serch for
+        org_regexpress: [string] the reg expression that you wnat to match with
+        target_text: [string] the target text that you are going to change to
+        replace: [boolean]
+        print_each: [boolean]
+    
+    OUTPUT: 
+        pandas dataframe, with an extra cleaned column
+    """
+    if isinstance(data_org, pd.DataFrame):
+        pass
+    else:
+        raise ValueError("Please use pandas dataframe as input. ")
+    data = data_org.copy()
+    total_len = len(data[col_name])
+
+    tick_start(f'Changing {org_regexpress} to {target_text}')
+    
+    result_list = []
+    pattern = re.compile(org_regexpress)
+    for i,string in enumerate(data[col_name]):
+        result = pattern.search(string)
+        if result:
+            sub_string = pattern.sub(target_text, string)
+            data.loc[i, col_name] = sub_string
+            print(f"""          {data_org.loc[i, col_name]} --> {sub_string}""")
+            print(f"""Progress: {i+1}/{total_len}""", end='\r')
+            result_list.append(result)
+    print(f"""Progress: {i+1}/{total_len}""")
+    result_list = list(set(result_list))
+
+    tick_end()
+
+    return data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def concurrent_run (time_out_max=0.5, time_out_count_max=10, max_workers=1):
+    """
+    INPUT: 
+        time_out_max: [number] seconds that you want to wait at most for a single excuation
+        time_out_count_max: [number] maximum number of consecutive Timeout Errors you may want to abort the procedure. 
+    """
+
+    time_out_count = 0
+    time_out_index_list = []
+
+
+    zh_list = []
+    result_df = pd.DataFrame({"eng":eng_list, "zh":np.nan})
+    total_len = len(result_df["eng"])
+
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        
+        to_lang = 'zh'
+        translator = Translator(to_lang=to_lang)
+        
+        for i,text_eng in enumerate(result_df["eng"]):
+            """
+            """
+            print(f"""    Progress: {i+1}/{total_len} """, end='\r')
+            try:
+                text_executor = executor.submit(translator.translate, text_eng)
+                text_zh = text_executor.result(timeout=time_out_max)
+                result_df.loc[i, "zh"] = text_zh
+            except concurrent.futures.TimeoutError:
+                time_out_count += 1
+                time_out_index_list.append(i)
+                print(f'        [TimeoutError] in translating {text_eng}. Jumped this item. ')
+                
+                if time_out_count>=time_out_count_max:
+                    time_out_toolong = time_out_index_list[-time_out_count_max]==time_out_index_list[-1] - (time_out_count_max-1)
+                    if time_out_toolong:
+                        check_value = continue_check(f"""{time_out_count_max} consecutive TimeoutErrors occured. 
+                            Type 'y' to continue (and reset timeout counter) or 'n' to abort: """)
+                        if check_value in ['n', 'N']:
+                            print('!!! Procedure aborted !!!')
+                            break
+                        else:
+                            time_out_count = 0
+                            time_out_index_list = []
+                            pass
+        print(f"""    Progress: {i+1}/{total_len} """)
 
 
 
