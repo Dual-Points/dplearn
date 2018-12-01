@@ -295,3 +295,44 @@ def pg_conn(host_adress, port_adress, db_name):
     conn = create_engine(address, echo=False).connect()
 
     return conn
+
+
+
+
+
+
+
+
+
+##### Extract and generate json style conversion #####
+def json_convertor (data, col_from, col_to):
+    """
+    This function is to use a two-columns pair to generate a json style string 
+    that can be used in the .replace() function in pandas. 
+    
+    Input: 
+        data: pandas DataFrame
+        col_from: column name to be used as 'before-change-value'
+        col_to: column name to be used as 'after-change-value'
+    
+    OUTPUT: 
+        json_string_long: json style string
+    """
+    json_string_long = []
+    data = data.reset_index()
+    total_length = len(data)
+    for i in range(total_length):
+        """
+        """
+        json_string = "'" + data.loc[i, col_from] + "'" + ":" + \
+                      "'" + data.loc[i, col_to] + "'"
+        json_string_long.append(json_string)
+    json_string_long = "{" + (',').join(json_string_long) + "}"
+    
+    return json_string_long
+
+
+
+
+
+
