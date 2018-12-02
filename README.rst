@@ -92,7 +92,7 @@ Please send pull requests, very much appriciated.
 
 
 
-.. |org_repo| image:: https://img.shields.io/badge/-Fork20%this20%repository-green.svg?logo=github&longCache=true&style=flat&logoColor=white
+.. |org_repo| image:: https://img.shields.io/badge/-Fork%20this%20repository-green.svg?logo=github&longCache=true&style=flat&logoColor=white
    :target: https://github.com/Dual-Points/dplearn
 
 
