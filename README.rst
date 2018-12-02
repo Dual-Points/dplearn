@@ -89,7 +89,7 @@ Please send pull requests, very much appriciated.
 
 .. rst-class:: center
  
- Sen LEI Website|  |Sen LEI Github|
+ |Sen LEI Website|  |Sen LEI Github|
 
 
 
