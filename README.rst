@@ -1,9 +1,13 @@
-DP Learn Toolkit in Python
-############################################################
+
 
 .. class:: center
 
- |PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
+	DP Learn Toolkit in Python
+############################################################
+
+.. class:: center
+	
+	|PyPI Version| |PyPI Platform| |PyPI License| |PyPI Doc|
 
 
 
@@ -91,8 +95,8 @@ Please send pull requests, very much appriciated.
 ************************************************************
 
 .. class:: center
-
- |Sen LEI Website| |Sen LEI Github|
+	
+	|Sen LEI Website| |Sen LEI Github|
 
 
 
