@@ -70,7 +70,7 @@ Contributing
 Please send pull requests, very much appriciated. 
 
 
-1. Fork |org_repo| on Github. 
+1. |org_repo| on Github. 
 2. Make a branch off of master and commit your changes to it. 
 3. Create a Pull Request with your contribution. 
 
@@ -84,6 +84,16 @@ Please send pull requests, very much appriciated.
 
 
 
+
+
+
+
+
+
+
+
+.. |org_repo| image:: https://img.shields.io/badge/-Fork20%this20%repository-green.svg?logo=github&longCache=true&style=flat&logoColor=white
+   :target: https://github.com/Dual-Points/dplearn
 
 
 
@@ -112,6 +122,3 @@ Please send pull requests, very much appriciated.
    :target: https://listen180.github.io/LEI-Sen/
 
 
-
-.. |org_repo| image:: https://img.shields.io/badge/-repository-green.svg?logo=github&longCache=true&style=flat&logoColor=white
-   :target: https://github.com/Dual-Points/dplearn
