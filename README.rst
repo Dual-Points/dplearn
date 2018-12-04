@@ -113,8 +113,8 @@ Please send pull requests, very much appriciated.
 .. |PyPI Platform| image:: https://img.shields.io/pypi/pyversions/dplearn.svg?logo=python&logoColor=white
    :target: https://pypi.python.org/pypi/dplearn
 
-.. |PyPI License| image:: https://img.shields.io/pypi/l/dplearn.svg
-   :target: https://opensource.org/licenses/BSD-3-Clause
+.. |PyPI License| image:: https://img.shields.io/github/license/Dual-Points/dplearn.svg
+   :target: https://github.com/Dual-Points/dplearn/blob/master/LICENSE
 
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/dplearn.svg
    :target: https://pypi.python.org/pypi/dplearn
