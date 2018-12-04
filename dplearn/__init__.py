@@ -77,7 +77,7 @@ class avatar(object):
 ╚═════╝ ╚═╝         ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
                                                                                        
                 """
-        print(info)
+        #print(info)
         time.sleep(2)
 
     def type_3(self):
@@ -98,7 +98,7 @@ class avatar(object):
 /____/_/    /____/\__/\_,_/_/ /_//_/
                                     
                 """
-        print(info)
+        #print(info)
         time.sleep(2)
 
 
