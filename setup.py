@@ -44,5 +44,5 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
-    keywords='deep-learning data-mining data-tools statistical-modeling',
+    keywords='deep-learning, data-mining, data-tools, statistical-modeling, data-analysis, data-science',
 )
