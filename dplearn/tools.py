@@ -11,6 +11,7 @@
 # *********************************************************
 
 import re
+import sys
 import time
 import pandas as pd
 import numpy as np
@@ -18,6 +19,7 @@ import concurrent
 from concurrent.futures import ThreadPoolExecutor
 from sqlalchemy import create_engine
 import getpass as gp
+import datetime as dt
 
 
 #####  #####
@@ -338,7 +340,7 @@ def json_convertor (data, col_from, col_to):
 
 
 
-##### Extract and generate json style conversion #####
+##### Split sting in a column into several columns #####
 def sep_expand (data, col_from, cols_to, sep=','):
     """
     This function is to split sting in a column into several columns. 
@@ -357,6 +359,79 @@ def sep_expand (data, col_from, cols_to, sep=','):
     data_expand.columns = cols_to
     
     return data_expand
+
+
+
+
+
+def convert_time_diff_hour (diff):
+    """
+    """
+    diff_window = int(diff.days * 24 + diff.seconds/3600 + 1)
+
+    return diff_window
+
+
+
+##### Check if it is in a n hour windows #####
+def consecutive_check (data, col_name, sep, limit, window, unit, time_fmt='%Y%m%d%H',check_col_name='check'):
+    """
+    This function is to check if a record shown at least n times within m timestamps. 
+
+    NOTE: 
+        n shou be less or equal to m; 
+        when m = n, meaning that you are finding consecutive n timestamp shown. 
+    
+    INPUT: 
+        data: pandas DataFrame
+        col_name: column name that stores all timestamps (string format, has specific seperator)
+        sep: seperator used to seperate those timestamps
+        limit: the minumun number of timestamps [int] 
+        window: the length of the time window [int] (same unit with 'limit')
+    
+    OUTPUT: 
+        DataFrame with an extra column told you True or False 
+    """
+    if limit > window:
+        raise ValueError("Value of 'limit' should be less than or equal to that of 'window'. ")
+    else:
+        pass
+    if unit == 'h' or unit == 'H':
+        time_diff_func = convert_time_diff_hour
+    
+    data = data.reset_index().drop(columns=["index"])
+    data[check_col_name] = False
+    total_records = len(data)
+
+    for i in range(len(data)):
+        """
+        """
+        time_list = data.loc[i, col_name].split(sep)
+        time_list = list(filter(None, time_list)) # remove the empty item(s) if exists
+        time_list = [dt.datetime.strptime(ts, time_fmt) for ts in time_list]
+        time_list.sort()
+        
+        for j, ts in enumerate(time_list):
+            """
+            """
+            if j+limit <= len(time_list):
+                first_date = time_list[j]
+                end_date = time_list[j+limit-1]
+                diff = end_date - first_date
+                diff_window = time_diff_func(diff)
+                if diff_window <= window:
+                    data.loc[i, check_col_name] = True
+                    break
+                else:
+                    continue
+        p_perc = round((i+1) / total_records * 100, 2)
+        sys.stdout.write("    Progress: %d/%d, %.2f%%   \r" % (i+1, total_records, p_perc) )
+        sys.stdout.flush()
+    
+    return data
+
+
+
 
 
 
