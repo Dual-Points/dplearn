@@ -310,7 +310,7 @@ def json_convertor (data, col_from, col_to):
     This function is to use a two-columns pair to generate a json style string 
     that can be used in the .replace() function in pandas. 
     
-    Input: 
+    INPUT: 
         data: pandas DataFrame
         col_from: column name to be used as 'before-change-value'
         col_to: column name to be used as 'after-change-value'
@@ -331,6 +331,32 @@ def json_convertor (data, col_from, col_to):
     
     return json_string_long
 
+
+
+
+
+
+
+
+##### Extract and generate json style conversion #####
+def sep_expand (data, col_from, cols_to, sep=','):
+    """
+    This function is to split sting in a column into several columns. 
+    
+    INPUT: 
+        data: pandas DataFrame
+        col_from: column name to be used as 'before-split-value'
+        cols_to: column names to be used as 'after-split-value'
+        sep: seperator used to seperate the values
+    
+    OUTPUT: 
+        data_expand: expanded columns (pandas DataFrame)
+    """
+    foo = lambda x: pd.Series([i for i in reversed(x.split(sep))])
+    data_expand = data[col_from].apply(foo)
+    data_expand.columns = cols_to
+    
+    return data_expand
 
 
 
