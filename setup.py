@@ -36,6 +36,8 @@ setup(
     #long_description_content_type="text/markdown",
     url="https://github.com/Dual-Points/dplearn",
     packages=setuptools.find_packages(),
+    include_package_data=True,
+    package_data={'': ['data/*.csv']},
     license="BSD 3-clause",
     classifiers=[
         "Development Status :: 3 - Alpha",
