@@ -37,6 +37,7 @@ Modules
 
 - tools
 - math
+- quant
 - extra
 
 
@@ -49,10 +50,11 @@ Use As A Python Module
 ------------------------------------------------------------
 
 .. code-block:: python
-   
- from dplearn.tools import clean
- data = clean(data)
- print(data)
+
+   from dplearn.tools import tick_start, tick_end
+   tick_start("<JOB TITLE>")
+   <DO SOMETHIGN HERE>
+   tick_end()
 
 
 
