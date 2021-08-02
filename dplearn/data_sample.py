@@ -9,14 +9,14 @@
 # * Description   : 
 # *********************************************************
 
+import pkg_resources
 import pandas as pd
-import os
 
-CWD = os.getcwd()
 
 def kLine():
     """
     """
-    f_path = CWD + "/data_sample/kLine.csv"
-    df = pd.read_csv(f_path)
+    f_path = "data/kLine.csv"
+    stream = pkg_resources.resource_stream(__name__, f_path)
+    df = pd.read_csv(stream,  encoding='utf-8')
     return df

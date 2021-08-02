@@ -23,4 +23,4 @@ This is a function of wrapping K-Line dataframe into longer-duration one.
 
    df_new = wrapKLine(data, open_c, close_c, high_c, low_c, vol_c, ts_c, ts_format, wrap)
 
-   pritn(df_new.head())
+   print(df_new.head())
