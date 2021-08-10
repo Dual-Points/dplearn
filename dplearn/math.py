@@ -11,10 +11,23 @@
 
 
 from math import atan, acos, asin, tan, sin, cos, radians, fabs, sqrt
+import sklearn.metrics as skm # accuracy_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
 
 
 
+def confusion_matrix(y_org=None, y_pred=None, show_precision=False):
+    """
+    Function of calculating confusion matrix 
+        with extra option of showing precision (percentage). 
+    """
+    cm = skm.confusion_matrix(y_org, y_pred)
+    if show_precision:
+        cm = cm.astype(float) / cm.astype(float).sum(axis=0) * 100
 
+    cm_report = skm.classification_report(y_org, y_pred)
+    print(cm_report)
+
+    return cm
 
 
 
